@@ -1,0 +1,7 @@
+def degree_centrality(graph):
+    centrality = {}
+    for node in graph:
+        centrality[node] = len(graph[node])
+    return centrality
+
+

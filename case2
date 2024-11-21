@@ -1,0 +1,13 @@
+def schedule_jobs(jobs):
+    # Sort jobs by their processing times
+    jobs.sort()
+    total_time = 0
+    completion_time = 0
+    
+    for job in jobs:
+        completion_time += job
+        total_time += completion_time
+    
+    return total_time
+
+
